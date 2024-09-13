@@ -1,0 +1,99 @@
+/*
+	STYLE FOR BASE VIEW
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	align-items: center;
+}
+
+.left_col {
+	order: 1;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+}
+
+.main_content {
+	order: 2;
+	flex: 1;
+}
+
+
+.right_col {
+	order: 3;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+}
+
+.skip_page_btn {
+	height: 80px;
+	line-height: 80px;
+	width: 80px;
+	font-size: 2em;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: #3CB371;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.skip_page_btn:disabled,
+.general_btn_layout:disabled {
+	/*border: 1px solid #999999;*/
+  	background-color: #cccccc;
+  	color: #666666;
+	cursor: auto;
+}
+
+.general_btn_layout {
+	padding: 0.5em;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 5%;
+	background-color: #005A9C;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.button_spinner_cont {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.spinner_img {
+	margin-right: 0.2em;
+}
+
+.process_display_out_cont {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.slider_cont {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	margin-top: 1em;
+}
+
+.error_box {
+	color: #D2042D;
+	margin-bottom: 0.5em;
+	margin-top: 0.2em;
+}
